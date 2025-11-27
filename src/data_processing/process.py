@@ -22,7 +22,7 @@ def main():
         df['sales'] = df['price'] * df['quantity']
         df = df[['sales', 'date', 'region']]
         if first:
-            df.to_csv("pink_m_sales.csv")
+            df.to_csv("pink_m_sales.csv", index=False)
             first = False
         else:
             df.to_csv(
