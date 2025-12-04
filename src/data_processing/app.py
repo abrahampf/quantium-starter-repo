@@ -32,7 +32,7 @@ fig = updateGraph("All")
 app.layout = html.Div(
     style={'backgroundColor': '#b1abe2', 'color':'#5C6784'},
     children=[
-    html.H1(children='Pink Morsels Sales 2018-2022', style={'textAlign': 'center', 'font-family': "Helvetica Neue"}),
+    html.H1(id="graph_title", children='Pink Morsels Sales 2018-2022', style={'textAlign': 'center', 'font-family': "Helvetica Neue"}),
 
     html.Div(
         style={'textAlign': 'center', 'font-family': "Helvetica Neue"},
